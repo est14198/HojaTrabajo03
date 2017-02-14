@@ -1,0 +1,19 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class QuickSortTest {
+
+	@Test
+	public void testSort() {
+		QuickSort test = new QuickSort();
+		int[] arrayTest = new int[4];
+		for (int i = 0; i<4; i++){
+			arrayTest[i] = 4-i;
+		}
+		test.sort(arrayTest);
+		assertArrayEquals(new int[]{1,2,3,4}, arrayTest);
+	}
+
+}

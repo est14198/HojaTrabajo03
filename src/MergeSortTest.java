@@ -1,3 +1,16 @@
+/**
+ * MergeSortTest.java
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructura de Datos Seccion 10
+ * Hoja de Trabajo 3
+ * Christopher Sandoval 13660
+ * Fernanda Estrada 14198
+ * Ana Lucia Diaz 151378
+ * Alejandro Vasquez 09284
+ * @since 2/13/2017
+ * Tomado de https://en.wikibooks.org/wiki/Algorithm_Implementation/Sorting/Gnome_sort
+ */
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;

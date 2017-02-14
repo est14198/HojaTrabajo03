@@ -11,10 +11,10 @@ public class MergeSortTest {
 		MergeSort test = new MergeSort();
 		int[] arrayTest = new int[4];
 		for (int i = 0; i<4; i++){
-			arrayTest[i] = 4 - i;
+			arrayTest[i] = i+1;
 		}
 		int[] result = test.leftHalf(arrayTest);
-		assertArrayEquals(new int[]{4,3},result);
+		assertArrayEquals(new int[]{1,2},result);
 		}
 
 	@Test
@@ -22,10 +22,24 @@ public class MergeSortTest {
 		MergeSort test = new MergeSort();
 		int[] arrayTest = new int[4];
 		for (int i = 0; i<4; i++){
-			arrayTest[i] = 4 - i;
+			arrayTest[i] = i+1;
 		}
 		int[] result = test.rightHalf(arrayTest);
-		assertArrayEquals(new int[]{2,1},result);
+		assertArrayEquals(new int[]{3,4},result);
 		}
+
+	@Test
+	public void testMerge() {
+		MergeSort test = new MergeSort();
+		int[] arrayTest = new int[4];
+		for (int i = 0; i<4; i++){
+			arrayTest[i] = i+1;
+		}
+		
+		int[] left = test.leftHalf(arrayTest);
+		int[] right = test.rightHalf(arrayTest);		
+		test.merge(arrayTest, left, right);
+		assertArrayEquals(new int[]{1,2,3,4},arrayTest);		
+	}
 
 }

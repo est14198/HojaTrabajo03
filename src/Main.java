@@ -41,32 +41,23 @@ public class Main {
     	    }
     	}
     	
-    	
-    	//ArrayList<Integer> listaTemp = new ArrayList<Integer>();
-    	//for(String s : listaStrings) listaTemp.add(Integer.valueOf(s));
-    	
-    	
-    	/*for(int i=0; i<listaNumeros.length; i++){
-    		System.out.println(listaNumeros[i]);
-    	}*/
-    	
     	// LISTA INICIAL DE NUMEROS
 		System.out.println("Lista Inicial: " + Arrays.toString(listaNumeros));
 		
 		// LISTA ORDENADA CON MERGESORT
 		//MergeSort.mergeSort(listaNumeros);
 		
-		// LISTA ORDENADA CON RADIX
+		// LISTA ORDENADA CON RADIXSORT
 		//RadixSort.sort(listaNumeros);
 		
-		// LISTA ORDENADA CON GNOME
+		// LISTA ORDENADA CON GNOMESORT
 		//GnomeSort.gnomeSort(listaNumeros);
 		
-		// LISTA ORDENADA CON QUICK
+		// LISTA ORDENADA CON QUICKSORT
 		QuickSort quick = new QuickSort();
 		quick.sort(listaNumeros);
 		
-		System.out.println("Lista Ordenada con Merge:  " + Arrays.toString(listaNumeros));
+		System.out.println("Lista Ordenada:  " + Arrays.toString(listaNumeros));
     	
     }
     
